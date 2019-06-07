@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>实现一个两栏布局，右侧固定宽度，左侧根据浏览器宽度进行自适应变化</title>
+    <style>
+
+
+        #left{
+            width: 100%;
+            background-color: blueviolet;
+            background-clip: content-box;
+            height: 500px;
+            padding-right: 150px;
+            box-sizing: border-box;
+            
+        }
+        #right{
+            width:150px;
+            height: 500px;
+            background-color: aqua;
+            box-sizing: border-box;
+            position: absolute;
+            right: 0;
+        }
+
+    </style>
+</head>
+<body>    
+        <div id="right"></div><div id="left"></div>
+</body>
+</html>
